@@ -46,6 +46,13 @@ public class AbstractDatatypes {
             System.out.println("Iterator: " + i);
         }
 
+        // test if collection contains object
+        System.out.println(c.contains(2));
+        // or if contains a complete collection
+        System.out.println(c.containsAll(a));
+
+
+
         // List exclusive methods
         l.addAll(c);
         // add at index
@@ -61,8 +68,12 @@ public class AbstractDatatypes {
         // sort list
         Collections.sort(l);
         System.out.println("l - sorted: " + l);
-
-
-
     }
+
+    public Collection<Integer> addZero(Collection<Integer> c){
+        ArrayList<Integer> aL = (ArrayList<Integer>) c;
+        aL.add(0);
+        return aL;
+    }
+
 }
